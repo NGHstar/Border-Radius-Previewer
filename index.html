@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Border Radius Previewer</title>
+  </head>
+  <style>
+    body {
+      margin: 1rem;
+    }
+    .card {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 1rem;
+      width: 343px;
+      height: 150px;
+      border: 1px solid dodgerblue;
+    }
+    .hidden {
+      display: none;
+    }
+  </style>
+  <body>
+    <h3>border radius previewer</h3>
+    lock:<input type="checkbox" class="js-is-locked" /><br /><br />
+    <input type="number" class="js-input-top-left" placeholder="top left" />
+    <input type="number" class="js-input-top-right" placeholder="top right" />
+    <br />
+    <input
+      type="number"
+      class="js-input-bottom-right"
+      placeholder="bottom right"
+    />
+    <input
+      type="number"
+      class="js-input-bottom-left"
+      placeholder="bottom left"
+    />
+
+    <div class="card"><h4>Border radius preview card</h4></div>
+    <br />
+    <button class="js-copy-button">copy css code</button>
+    <span class="copy-message hidden"> copied</span>
+  </body>
+  <script src="code.js"></script>
+</html>
